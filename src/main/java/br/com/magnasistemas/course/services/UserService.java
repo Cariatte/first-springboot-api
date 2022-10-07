@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.magnasistemas.course.entities.User;
 import br.com.magnasistemas.course.repositories.UserRepository;
+import br.com.magnasistemas.course.services.exceptions.ResourceNotFoundException;
 
 
 @Service
@@ -25,7 +26,7 @@ public class UserService {
 		
 		Optional<User> obj = userRepository.findById(id);
 		
-		return obj.get();
+		return obj.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 	
 	public User insert(User obj) {
