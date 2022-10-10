@@ -32,3 +32,8 @@ cd first-springboot-api
 Daniel Rodrigues Cariatte
 
 https://www.linkedin.com/in/danielcariatte/
+
+# Agradecimentos
+
+DevSuperior
+Github ( https://github.com/acenelio )
